@@ -1,7 +1,5 @@
 version: 1
 env:
-  variables:
-    key: value
 frontend:
   phases:
     preBuild:
@@ -9,12 +7,11 @@ frontend:
         - yarn install
     build:
       commands:
-        - yarn run build
+        - yarn run test && yarn run build
   artifacts:
     baseDirectory: /dist
     files:
       - '**/*'
-    discard-paths: yes
   cache:
     paths:
       - node_modules/**/*
@@ -22,7 +19,7 @@ test:
   phases:
     preTest:
       commands:
-        - *enter command*
+        - npm ci
     test:
       commands:
         - *enter command*
@@ -30,8 +27,8 @@ test:
       commands:
         - *enter command*
   artifacts:
+    baseDirectory: cypress
+    configFilePath: '**/mochawesome.json'
     files:
-        - location
-        - location
-    configFilePath: *location*
-    baseDirectory: *location*
+      - '**/*.png'
+      - '**/*.mp4'
