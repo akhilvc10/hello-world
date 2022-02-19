@@ -1,6 +1,9 @@
-import { render, cleanup, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import HelloWorld from "../HelloWorld";
+
+import { render, screen } from "@testing-library/react";
+import * as React from "react";
+
+import HelloWorld from "../src/components/HelloWorld";
 
 test("Should render helloworld component", () => {
   render(<HelloWorld />);

@@ -7,7 +7,8 @@ frontend:
         - yarn install
     build:
       commands:
-        - yarn run test && yarn run build
+        - yarn run lint
+        - yarn run test:jest && yarn run build
   artifacts:
     baseDirectory: /dist
     files:
@@ -20,15 +21,19 @@ test:
     preTest:
       commands:
         - npm ci
+        - npm install wait-on
+        - npm install pm2
+        - npx pm2 start npm -- start
+        - 'npx wait-on http://localhost:3000'
     test:
       commands:
-        - *enter command*
+        - npm run test:cy
     postTest:
       commands:
-        - *enter command*
+        - npm run report:combined
+        - npx pm2 kill
   artifacts:
     baseDirectory: cypress
-    configFilePath: '**/mochawesome.json'
     files:
       - '**/*.png'
       - '**/*.mp4'

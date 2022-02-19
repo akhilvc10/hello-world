@@ -1,0 +1,35 @@
+{
+  "/Users/akki/Desktop/hello-world/src/components/HelloWorld.tsx": {
+    "path": "/Users/akki/Desktop/hello-world/src/components/HelloWorld.tsx",
+    "statementMap": {
+      "0": {
+        "start": { "line": 3, "column": 19 },
+        "end": { "line": 5, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 4, "column": 2 },
+        "end": { "line": 4, "column": 52 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 3, "column": 19 },
+          "end": { "line": 3, "column": 20 }
+        },
+        "loc": {
+          "start": { "line": 3, "column": 25 },
+          "end": { "line": 5, "column": 1 }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 1, "1": 1 },
+    "f": { "0": 1 },
+    "b": {},
+    "_coverageSchema": "43e27e138ebf9cfc5966b082cf9a028302ed4184",
+    "hash": "f0a0422ebccc4280f801a58deb1ab2cf19efc896"
+  }
+}

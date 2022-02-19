@@ -1,0 +1,13 @@
+{
+  "parent": null,
+  "pid": 33997,
+  "argv": ["/usr/local/bin/node", "/Users/akki/Desktop/hello-world"],
+  "execArgv": [],
+  "cwd": "/Users/akki/Desktop/hello-world",
+  "time": 1645292275691,
+  "ppid": 33996,
+  "coverageFilename": "/Users/akki/Desktop/hello-world/.nyc_output/46590686-c4da-4b80-864b-291f125e9081.json",
+  "externalId": "",
+  "uuid": "46590686-c4da-4b80-864b-291f125e9081",
+  "files": []
+}

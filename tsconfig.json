@@ -15,11 +15,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "baseUrl": "src",
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types"],
+    "types": ["cypress"]
   },
-  "include": ["./src"],
+  "include": ["./src", "__tests__"],
   "exclude": ["node_modules"]
   //   "exclude": ["node_modules", "lint-staged.config.js"]
 }
