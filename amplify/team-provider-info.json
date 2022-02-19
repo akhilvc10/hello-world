@@ -10,6 +10,14 @@
       "StackName": "amplify-helloworldlayr-dev-105445",
       "StackId": "arn:aws:cloudformation:ap-south-1:960351580303:stack/amplify-helloworldlayr-dev-105445/f1fa9f80-8fb1-11ec-ab14-028f52b83b4e",
       "AmplifyAppId": "d6wnie1j9vnfl"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d6wnie1j9vnfl",
+          "type": "cicd"
+        }
+      }
     }
   }
 }
