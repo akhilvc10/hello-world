@@ -24,7 +24,7 @@ const HelloWorld: React.FC = () => {
             }
           }
         );
-        return response;
+        return response.data;
       }
     } catch (error) {
       return error;
