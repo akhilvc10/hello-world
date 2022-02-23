@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-23T08:01:36.589Z",
-    "end": "2022-02-23T08:01:49.045Z",
-    "duration": 12456,
+    "start": "2022-02-23T08:24:27.388Z",
+    "end": "2022-02-23T08:24:39.233Z",
+    "duration": 11845,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ca26c408-1f71-4feb-bbfa-9003f1d1f86d",
+      "uuid": "22c475b8-bdce-450a-a078-0457d3981a23",
       "title": "",
       "fullFile": "cypress/integration/helloworld.test.ts",
       "file": "cypress/integration/helloworld.test.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2ef669e1-3464-4a50-8cc5-ec9d505cfc85",
+          "uuid": "caded398-542e-4167-8032-e5b7641bb4e4",
           "title": "My First Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should render hello world",
               "fullTitle": "My First Test Should render hello world",
               "timedOut": null,
-              "duration": 2932,
+              "duration": 3082,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.contains('Hello world');",
               "err": {},
-              "uuid": "8ad93fb7-dff8-47a1-a176-7c7c2169a877",
-              "parentUUID": "2ef669e1-3464-4a50-8cc5-ec9d505cfc85",
+              "uuid": "49dfec1f-bcf8-4dfc-8a8b-6afabb0f18c1",
+              "parentUUID": "caded398-542e-4167-8032-e5b7641bb4e4",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "File Upload using cypress-file-upload npm package",
               "fullTitle": "My First Test File Upload using cypress-file-upload npm package",
               "timedOut": null,
-              "duration": 6371,
+              "duration": 5673,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "var filepath = '../fixtures/example.jpg';\ncy.get('input[type=\"file\"]').attachFile(filepath);\n// cy.get('#file-submit').click()\ncy.get('.MuiAlert-message', { timeout: 8000 }).should('have.text', 'File Uploaded Successfully');",
               "err": {},
-              "uuid": "f6489744-d5be-4c66-8f73-bc9add37877e",
-              "parentUUID": "2ef669e1-3464-4a50-8cc5-ec9d505cfc85",
+              "uuid": "6ae72dc3-612d-46ca-9ca6-2b6f32018c17",
+              "parentUUID": "caded398-542e-4167-8032-e5b7641bb4e4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8ad93fb7-dff8-47a1-a176-7c7c2169a877",
-            "f6489744-d5be-4c66-8f73-bc9add37877e"
+            "49dfec1f-bcf8-4dfc-8a8b-6afabb0f18c1",
+            "6ae72dc3-612d-46ca-9ca6-2b6f32018c17"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9303,
+          "duration": 8755,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
