@@ -1,6 +1,8 @@
+import "./HelloWorld.css";
+
+import { Alert, CircularProgress } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Alert, CircularProgress } from "@mui/material";
 
 const HelloWorld: React.FC = () => {
   const [file, setFile] = useState<any>(null);
@@ -65,7 +67,9 @@ const HelloWorld: React.FC = () => {
           Uploaded successfully
         </span>
       )} */}
-      <div data-testid="hello">Hello world</div>
+      <div data-testid="hello" className="hello-text">
+        Hello world
+      </div>
       <div className="button-wrapper">
         <span className="label">Select File</span>
         <input
@@ -75,7 +79,7 @@ const HelloWorld: React.FC = () => {
           className="upload-box"
           onChange={(e) => handleChange(e)}
         />
-        <span>{file && file[0].name}</span>
+        <span className="file-text">{file && file[0].name}</span>
       </div>
 
       <span>
