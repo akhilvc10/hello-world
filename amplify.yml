@@ -16,20 +16,23 @@ frontend:
     paths:
       - node_modules/**/*
 test:
-  phases:
-    preTest:
-      commands:
-        - npm install
-        - npm install start-server-and-test cypress mocha mochawesome mochawesome-merge mochawesome-report-generator --save-dev
-    test:
-      commands:
-        - npx start-server-and-test 'npm start' 3000 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
-    postTest:
-      commands:
-        - npx mochawesome-merge cypress/report/mochawesome-report/mochawesome*.json > cypress/report/mochawesome.json
   artifacts:
     baseDirectory: cypress
     configFilePath: '**/mochawesome.json'
     files:
       - '**/*.png'
       - '**/*.mp4'
+  phases:
+    preTest:
+      commands:
+        - npm install
+        - npm install wait-on
+        - npm install  mocha@5.2.0 mochawesome mochawesome-merge mochawesome-report-generator
+        - 'npm start & npx wait-on http://localhost:3000'
+    test:
+      commands:
+        - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
+    postTest:
+      commands:
+        - npx mochawesome-merge --reportDir cypress/report/mochawesome-report > cypress/report/mochawesome.json
+
