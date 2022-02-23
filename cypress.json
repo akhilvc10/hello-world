@@ -1,3 +1,5 @@
 {
-  "reporter": "mochawesome"
+  "reporter": "mochawesome",
+  "baseUrl": "http://localhost:3000",
+  "includeShadowDom": true
 }
