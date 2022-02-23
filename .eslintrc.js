@@ -33,13 +33,13 @@ module.exports = {
   },
   rules: {
     "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-explicit-any": "off",
     "jsx-a11y/accessible-emoji": "off",
     "react/prop-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/ban-ts-comment": "off",
     "import/no-anonymous-default-export": "warn",
     "jsx-a11y/alt-text": [
