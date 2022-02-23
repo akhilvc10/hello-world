@@ -54,18 +54,6 @@ const HelloWorld: React.FC = () => {
 
   return (
     <>
-      {/* <div data-testid="hello">Hello world</div>
-      <input
-        data-testid="element"
-        type="file"
-        onChange={(e) => handleChange(e)}
-      />
-      {isUploaded && (
-        <span id="upload" data-testid="handler">
-          Uploaded successfully
-        </span>
-      )} */}
-      <div data-testid="hello">Hello world</div>
       <div className="button-wrapper">
         <span className="label">Select File</span>
         <input
@@ -75,7 +63,7 @@ const HelloWorld: React.FC = () => {
           className="upload-box"
           onChange={(e) => handleChange(e)}
         />
-        <span>{file && file[0].name}</span>
+        <span className="file-text">{file && file[0].name}</span>
       </div>
 
       <span>
