@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-23T08:01:36.589Z",
+    "end": "2022-02-23T08:01:49.045Z",
+    "duration": 12456,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca26c408-1f71-4feb-bbfa-9003f1d1f86d",
+      "title": "",
+      "fullFile": "cypress/integration/helloworld.test.ts",
+      "file": "cypress/integration/helloworld.test.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2ef669e1-3464-4a50-8cc5-ec9d505cfc85",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should render hello world",
+              "fullTitle": "My First Test Should render hello world",
+              "timedOut": null,
+              "duration": 2932,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Hello world');",
+              "err": {},
+              "uuid": "8ad93fb7-dff8-47a1-a176-7c7c2169a877",
+              "parentUUID": "2ef669e1-3464-4a50-8cc5-ec9d505cfc85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "File Upload using cypress-file-upload npm package",
+              "fullTitle": "My First Test File Upload using cypress-file-upload npm package",
+              "timedOut": null,
+              "duration": 6371,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var filepath = '../fixtures/example.jpg';\ncy.get('input[type=\"file\"]').attachFile(filepath);\n// cy.get('#file-submit').click()\ncy.get('.MuiAlert-message', { timeout: 8000 }).should('have.text', 'File Uploaded Successfully');",
+              "err": {},
+              "uuid": "f6489744-d5be-4c66-8f73-bc9add37877e",
+              "parentUUID": "2ef669e1-3464-4a50-8cc5-ec9d505cfc85",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8ad93fb7-dff8-47a1-a176-7c7c2169a877",
+            "f6489744-d5be-4c66-8f73-bc9add37877e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9303,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.1"
+    }
+  }
+}
