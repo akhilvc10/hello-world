@@ -1,15 +1,10 @@
-import {
-  render,
-  cleanup,
-  screen,
-  act,
-  waitFor,
-  fireEvent
-} from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom";
-import HelloWorld from "../src/components/HelloWorld";
+
+import { cleanup, render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { wait } from "@testing-library/user-event/dist/utils";
+
+import HelloWorld from "../src/components/HelloWorld";
 
 afterAll(() => {
   cleanup();
