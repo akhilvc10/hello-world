@@ -1,12 +1,10 @@
-import "./HelloWorld.css";
-
 import { Alert, CircularProgress } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const HelloWorld: React.FC = () => {
   const [file, setFile] = useState<any>(null);
-  const [isUploaded, setIsUploaded] = useState<String>("");
+  const [isUploaded, setIsUploaded] = useState<string>("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const files = e?.target?.files;
