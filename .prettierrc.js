@@ -1,6 +1,11 @@
 module.exports = {
-  trailingComma: "none",
+  trailingComma: 'none',
   useTabs: false,
   semi: true,
-  tabWidth: 2
+  tabWidth: 2,
+  bracketSpacing: true,
+  htmlWhitespaceSensitivity: 'ignore',
+  parser: 'typescript',
+  printWidth: 120,
+  singleQuote: true
 };
