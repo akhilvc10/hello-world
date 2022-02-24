@@ -1,5 +1,6 @@
 {
   "reporter": "mochawesome",
   "baseUrl": "http://localhost:3000",
-  "includeShadowDom": true
+  "includeShadowDom": true,
+  "projectId": "srvwa9"
 }
