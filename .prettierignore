@@ -8,3 +8,4 @@ amplify/*
 cypress/*
 package.json
 package-lock.json
+cypress.json
