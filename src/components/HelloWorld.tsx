@@ -15,7 +15,7 @@ const HelloWorld: React.FC = () => {
   const UploadFn = async () => {
     try {
       if (file) {
-        const response = await axios(`${import.meta.env.VITE_REST_ENDPOINT}/getPreSignedUrl`, {
+        const response = await axios(`${process.env.VITE_REST_ENDPOINT}/getPreSignedUrl`, {
           method: 'POST',
           data: {
             fileName: file[0].name

@@ -1,19 +1,20 @@
 module.exports = {
+  plugins: ['babel-plugin-transform-import-meta'],
   presets: [
     [
-      "@babel/preset-react",
+      '@babel/preset-react',
       {
-        runtime: "automatic"
+        runtime: 'automatic'
       }
     ],
     [
-      "@babel/preset-env",
+      '@babel/preset-env',
       {
         targets: {
-          node: "current"
+          node: 'current'
         }
       }
     ],
-    "@babel/preset-typescript"
+    '@babel/preset-typescript'
   ]
 };
