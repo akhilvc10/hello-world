@@ -21,4 +21,5 @@ amplifytools.xcconfig
 **.sample
 .env
 jest-coverage
+mochawesome-report
 #amplify-do-not-edit-end

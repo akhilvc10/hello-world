@@ -13,3 +13,4 @@ lint-staged.config.js
 babel.config.js
 jest.config.js
 jest-coverage
+amplify.yml
