@@ -18,7 +18,7 @@
     "jsx": "preserve",
     "baseUrl": "src",
     "typeRoots": ["node_modules/@types"],
-    "types": ["cypress", "cypress-file-upload"]
+    "types": ["cypress", "cypress-file-upload","node"]
   },
   "include": ["./src"],
   "exclude": ["node_modules"]
