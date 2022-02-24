@@ -1,29 +1,22 @@
 module.exports = {
   root: true,
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: { jsx: true }
   },
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
-    "prettier",
-    "plugin:@typescript-eslint/recommended"
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
+    'prettier',
+    'plugin:@typescript-eslint/recommended'
   ],
-  plugins: [
-    "simple-import-sort",
-    "prettier",
-    "@typescript-eslint",
-    "import",
-    "react",
-    "jsx-a11y"
-  ],
+  plugins: ['simple-import-sort', 'prettier', '@typescript-eslint', 'import', 'react', 'jsx-a11y'],
   settings: {
     react: {
-      version: "detect"
+      version: 'detect'
     }
   },
   env: {
@@ -32,44 +25,44 @@ module.exports = {
     node: true
   },
   rules: {
-    "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "jsx-a11y/accessible-emoji": "off",
-    "react/prop-types": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/ban-ts-comment": "off",
-    "import/no-anonymous-default-export": "warn",
-    "jsx-a11y/alt-text": [
-      "warn",
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'jsx-a11y/accessible-emoji': 'off',
+    'react/prop-types': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    'import/no-anonymous-default-export': 'warn',
+    'jsx-a11y/alt-text': [
+      'warn',
       {
-        elements: ["img"],
-        img: ["Image"]
+        elements: ['img'],
+        img: ['Image']
       }
     ],
-    "jsx-a11y/aria-props": "warn",
-    "jsx-a11y/aria-proptypes": "warn",
-    "jsx-a11y/aria-unsupported-elements": "warn",
-    "jsx-a11y/role-has-required-aria-props": "warn",
-    "jsx-a11y/role-supports-aria-props": "warn",
-    "jsx-a11y/anchor-is-valid": [
-      "error",
+    'jsx-a11y/aria-props': 'warn',
+    'jsx-a11y/aria-proptypes': 'warn',
+    'jsx-a11y/aria-unsupported-elements': 'warn',
+    'jsx-a11y/role-has-required-aria-props': 'warn',
+    'jsx-a11y/role-supports-aria-props': 'warn',
+    'jsx-a11y/anchor-is-valid': [
+      'error',
       {
-        components: ["Link"],
-        specialLink: ["hrefLeft", "hrefRight"],
-        aspects: ["invalidHref", "preferButton"]
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton']
       }
     ]
   },
-  ignorePatterns: ["*.config.ts", "src/**/*.test.ts", "cypress/**/*.js"],
+  ignorePatterns: ['*.config.ts', 'src/**/*.test.ts', 'cypress/**/*.js', '*.config.js'],
   overrides: [
     {
-      files: ["**/*.ts?(x)"],
-      parser: "@typescript-eslint/parser",
+      files: ['**/*.ts?(x)'],
+      parser: '@typescript-eslint/parser',
       parserOptions: {
-        sourceType: "module",
+        sourceType: 'module',
         ecmaFeatures: {
           jsx: true
         },
