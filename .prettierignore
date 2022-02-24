@@ -6,3 +6,5 @@ dist-ssr
 node_modules/*
 amplify/*
 cypress/*
+package.json
+package-lock.json
