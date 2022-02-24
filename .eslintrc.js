@@ -56,7 +56,7 @@ module.exports = {
       }
     ]
   },
-  ignorePatterns: ['*.config.ts', 'src/**/*.test.ts', 'cypress/**/*.js', '*.config.js'],
+  ignorePatterns: ['*.config.ts', 'src/**/*.test.ts', 'cypress/**/*.js', '*.config.js', 'tsconfig.json'],
   overrides: [
     {
       files: ['**/*.ts?(x)'],
